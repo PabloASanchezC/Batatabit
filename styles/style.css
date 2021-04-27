@@ -150,8 +150,17 @@ main {
     color: #757575;
 }
 
+.main-tables-container {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table, .main-commision-table {
     width: 70%;
+    scroll-snap-align: center;
     min-width: 235px;
     max-width: 500px;
     height: 280px;
@@ -450,13 +459,22 @@ main {
     color: #757575;
 }
 
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .plans-container--card {
     position: relative;
+    scroll-snap-align: center;
     width: 60%;
     min-width: 192px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 10px 0;
     padding: 0 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(83, 73, 30, 0.16);
@@ -556,4 +574,43 @@ main {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+    justify-content: space-around;
+}
+
+.footer-links {
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--off-white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+footer a:hover{
+    color: var(--warm-black);
+}
+
+.footer-logo {
+    width: 65px;
+    height: 50px;
+    background-image: url('../assets/images/logoAlt.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
 }
