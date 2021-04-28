@@ -99,7 +99,7 @@ header img {
     width: 13px;
     height: 8px;
     margin-left: 10px;
-    background-image: url(../assets/icons/VectorDown.svg);
+    background-image: url('../assets/icons/VectorDown.svg');
 }
 
 main {
@@ -128,7 +128,7 @@ main {
     height: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
-    background-image: url(../assets/images/bitcoin.svg);
+    background-image: url('../assets/images/bitcoin.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -461,7 +461,7 @@ main {
 
 .plans-container--slider {
     display: flex;
-    height: 316px;
+    height: 320px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
